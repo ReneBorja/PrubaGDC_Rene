@@ -1,0 +1,6 @@
+framework module Pods_PrubaGDC_Rene {
+  umbrella header "Pods-PrubaGDC_Rene-umbrella.h"
+
+  export *
+  module * { export * }
+}

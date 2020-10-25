@@ -1,0 +1,840 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0F2E4A222544CB2B007E11A3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F2E4A212544CB2B007E11A3 /* AppDelegate.swift */; };
+		0F2E4A242544CB2B007E11A3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F2E4A232544CB2B007E11A3 /* SceneDelegate.swift */; };
+		0F2E4A262544CB2B007E11A3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F2E4A252544CB2B007E11A3 /* ViewController.swift */; };
+		0F2E4A292544CB2B007E11A3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F2E4A272544CB2B007E11A3 /* Main.storyboard */; };
+		0F2E4A2B2544CB2F007E11A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0F2E4A2A2544CB2F007E11A3 /* Assets.xcassets */; };
+		0F2E4A2E2544CB2F007E11A3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F2E4A2C2544CB2F007E11A3 /* LaunchScreen.storyboard */; };
+		0F2E4A392544CB2F007E11A3 /* PrubaGDC_ReneTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F2E4A382544CB2F007E11A3 /* PrubaGDC_ReneTests.swift */; };
+		0F2E4A442544CB2F007E11A3 /* PrubaGDC_ReneUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F2E4A432544CB2F007E11A3 /* PrubaGDC_ReneUITests.swift */; };
+		0F2E4A752544DAF6007E11A3 /* vcGituHubUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F2E4A742544DAF6007E11A3 /* vcGituHubUser.swift */; };
+		0F2E4A8925451B66007E11A3 /* vcDetalleUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F2E4A8825451B66007E11A3 /* vcDetalleUser.m */; };
+		0F2E4A9025451D93007E11A3 /* SharedManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F2E4A8F25451D93007E11A3 /* SharedManager.m */; };
+		0F2E4AAD254522CD007E11A3 /* Action.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F2E4AAC254522CD007E11A3 /* Action.m */; };
+		0F2E4AB4254528DF007E11A3 /* cell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F2E4AB3254528DF007E11A3 /* cell.m */; };
+		1CF01914E9FAE2C8CC6CBEE3 /* Pods_PrubaGDC_Rene_PrubaGDC_ReneUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 051E018FF5BC286974805B67 /* Pods_PrubaGDC_Rene_PrubaGDC_ReneUITests.framework */; };
+		43424DB909A47872B7A2A2CD /* Pods_PrubaGDC_ReneTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C4933F3C5F3003EBDDCBD49 /* Pods_PrubaGDC_ReneTests.framework */; };
+		E90A3CF2112B22C0FD89B9D4 /* Pods_PrubaGDC_Rene.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B78D069D69578A8B2835EBCC /* Pods_PrubaGDC_Rene.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0F2E4A352544CB2F007E11A3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0F2E4A162544CB2B007E11A3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0F2E4A1D2544CB2B007E11A3;
+			remoteInfo = PrubaGDC_Rene;
+		};
+		0F2E4A402544CB2F007E11A3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0F2E4A162544CB2B007E11A3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0F2E4A1D2544CB2B007E11A3;
+			remoteInfo = PrubaGDC_Rene;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		051E018FF5BC286974805B67 /* Pods_PrubaGDC_Rene_PrubaGDC_ReneUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PrubaGDC_Rene_PrubaGDC_ReneUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0F2E4A1E2544CB2B007E11A3 /* PrubaGDC_Rene.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PrubaGDC_Rene.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0F2E4A212544CB2B007E11A3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		0F2E4A232544CB2B007E11A3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		0F2E4A252544CB2B007E11A3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		0F2E4A282544CB2B007E11A3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0F2E4A2A2544CB2F007E11A3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0F2E4A2D2544CB2F007E11A3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0F2E4A2F2544CB2F007E11A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0F2E4A342544CB2F007E11A3 /* PrubaGDC_ReneTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PrubaGDC_ReneTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0F2E4A382544CB2F007E11A3 /* PrubaGDC_ReneTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrubaGDC_ReneTests.swift; sourceTree = "<group>"; };
+		0F2E4A3A2544CB2F007E11A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0F2E4A3F2544CB2F007E11A3 /* PrubaGDC_ReneUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PrubaGDC_ReneUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0F2E4A432544CB2F007E11A3 /* PrubaGDC_ReneUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrubaGDC_ReneUITests.swift; sourceTree = "<group>"; };
+		0F2E4A452544CB2F007E11A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0F2E4A742544DAF6007E11A3 /* vcGituHubUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = vcGituHubUser.swift; sourceTree = "<group>"; };
+		0F2E4A8625451B66007E11A3 /* PrubaGDC_Rene-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PrubaGDC_Rene-Bridging-Header.h"; sourceTree = "<group>"; };
+		0F2E4A8725451B66007E11A3 /* vcDetalleUser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = vcDetalleUser.h; sourceTree = "<group>"; };
+		0F2E4A8825451B66007E11A3 /* vcDetalleUser.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = vcDetalleUser.m; sourceTree = "<group>"; };
+		0F2E4A8E25451D93007E11A3 /* SharedManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SharedManager.h; sourceTree = "<group>"; };
+		0F2E4A8F25451D93007E11A3 /* SharedManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SharedManager.m; sourceTree = "<group>"; };
+		0F2E4AAB254522CD007E11A3 /* Action.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Action.h; sourceTree = "<group>"; };
+		0F2E4AAC254522CD007E11A3 /* Action.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Action.m; sourceTree = "<group>"; };
+		0F2E4AB2254528DF007E11A3 /* cell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = cell.h; sourceTree = "<group>"; };
+		0F2E4AB3254528DF007E11A3 /* cell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = cell.m; sourceTree = "<group>"; };
+		2736BB1833A313013FDF1373 /* Pods-PrubaGDC_Rene-PrubaGDC_ReneUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PrubaGDC_Rene-PrubaGDC_ReneUITests.debug.xcconfig"; path = "Target Support Files/Pods-PrubaGDC_Rene-PrubaGDC_ReneUITests/Pods-PrubaGDC_Rene-PrubaGDC_ReneUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		3C4933F3C5F3003EBDDCBD49 /* Pods_PrubaGDC_ReneTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PrubaGDC_ReneTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		78C2E5BABFCE81884FE9710A /* Pods-PrubaGDC_Rene.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PrubaGDC_Rene.release.xcconfig"; path = "Target Support Files/Pods-PrubaGDC_Rene/Pods-PrubaGDC_Rene.release.xcconfig"; sourceTree = "<group>"; };
+		9A6219BCF833754ACDE1CD95 /* Pods-PrubaGDC_Rene-PrubaGDC_ReneUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PrubaGDC_Rene-PrubaGDC_ReneUITests.release.xcconfig"; path = "Target Support Files/Pods-PrubaGDC_Rene-PrubaGDC_ReneUITests/Pods-PrubaGDC_Rene-PrubaGDC_ReneUITests.release.xcconfig"; sourceTree = "<group>"; };
+		B78D069D69578A8B2835EBCC /* Pods_PrubaGDC_Rene.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PrubaGDC_Rene.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CCF6BEEA88D641AC77677848 /* Pods-PrubaGDC_Rene.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PrubaGDC_Rene.debug.xcconfig"; path = "Target Support Files/Pods-PrubaGDC_Rene/Pods-PrubaGDC_Rene.debug.xcconfig"; sourceTree = "<group>"; };
+		D6C2CD570B37890C03B138E3 /* Pods-PrubaGDC_ReneTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PrubaGDC_ReneTests.debug.xcconfig"; path = "Target Support Files/Pods-PrubaGDC_ReneTests/Pods-PrubaGDC_ReneTests.debug.xcconfig"; sourceTree = "<group>"; };
+		EB3D5E3F072EACD82FD57E86 /* Pods-PrubaGDC_ReneTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PrubaGDC_ReneTests.release.xcconfig"; path = "Target Support Files/Pods-PrubaGDC_ReneTests/Pods-PrubaGDC_ReneTests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0F2E4A1B2544CB2B007E11A3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E90A3CF2112B22C0FD89B9D4 /* Pods_PrubaGDC_Rene.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0F2E4A312544CB2F007E11A3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43424DB909A47872B7A2A2CD /* Pods_PrubaGDC_ReneTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0F2E4A3C2544CB2F007E11A3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1CF01914E9FAE2C8CC6CBEE3 /* Pods_PrubaGDC_Rene_PrubaGDC_ReneUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0F2E4A152544CB2B007E11A3 = {
+			isa = PBXGroup;
+			children = (
+				0F2E4A202544CB2B007E11A3 /* PrubaGDC_Rene */,
+				0F2E4A372544CB2F007E11A3 /* PrubaGDC_ReneTests */,
+				0F2E4A422544CB2F007E11A3 /* PrubaGDC_ReneUITests */,
+				0F2E4A1F2544CB2B007E11A3 /* Products */,
+				392F441DB578E47E88F5892E /* Pods */,
+				5A3A27F100073E0D2358E637 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		0F2E4A1F2544CB2B007E11A3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0F2E4A1E2544CB2B007E11A3 /* PrubaGDC_Rene.app */,
+				0F2E4A342544CB2F007E11A3 /* PrubaGDC_ReneTests.xctest */,
+				0F2E4A3F2544CB2F007E11A3 /* PrubaGDC_ReneUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0F2E4A202544CB2B007E11A3 /* PrubaGDC_Rene */ = {
+			isa = PBXGroup;
+			children = (
+				0F2E4A732544DA6E007E11A3 /* Controller */,
+				0F2E4A5A2544CDA1007E11A3 /* View */,
+				0F2E4A592544CD7C007E11A3 /* Model */,
+				0F2E4A252544CB2B007E11A3 /* ViewController.swift */,
+				0F2E4A2F2544CB2F007E11A3 /* Info.plist */,
+			);
+			path = PrubaGDC_Rene;
+			sourceTree = "<group>";
+		};
+		0F2E4A372544CB2F007E11A3 /* PrubaGDC_ReneTests */ = {
+			isa = PBXGroup;
+			children = (
+				0F2E4A382544CB2F007E11A3 /* PrubaGDC_ReneTests.swift */,
+				0F2E4A3A2544CB2F007E11A3 /* Info.plist */,
+			);
+			path = PrubaGDC_ReneTests;
+			sourceTree = "<group>";
+		};
+		0F2E4A422544CB2F007E11A3 /* PrubaGDC_ReneUITests */ = {
+			isa = PBXGroup;
+			children = (
+				0F2E4A432544CB2F007E11A3 /* PrubaGDC_ReneUITests.swift */,
+				0F2E4A452544CB2F007E11A3 /* Info.plist */,
+			);
+			path = PrubaGDC_ReneUITests;
+			sourceTree = "<group>";
+		};
+		0F2E4A592544CD7C007E11A3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0F2E4AB1254528B8007E11A3 /* cell */,
+				0F2E4AAA25452273007E11A3 /* Action */,
+				0F2E4A8D25451D56007E11A3 /* singleton */,
+				0F2E4A232544CB2B007E11A3 /* SceneDelegate.swift */,
+				0F2E4A212544CB2B007E11A3 /* AppDelegate.swift */,
+			);
+			name = Model;
+			path = "Modelç";
+			sourceTree = "<group>";
+		};
+		0F2E4A5A2544CDA1007E11A3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0F2E4A2C2544CB2F007E11A3 /* LaunchScreen.storyboard */,
+				0F2E4A2A2544CB2F007E11A3 /* Assets.xcassets */,
+				0F2E4A272544CB2B007E11A3 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0F2E4A732544DA6E007E11A3 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				0F2E4A8525451B41007E11A3 /* Detalle User */,
+				0F2E4A742544DAF6007E11A3 /* vcGituHubUser.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		0F2E4A8525451B41007E11A3 /* Detalle User */ = {
+			isa = PBXGroup;
+			children = (
+				0F2E4A8725451B66007E11A3 /* vcDetalleUser.h */,
+				0F2E4A8625451B66007E11A3 /* PrubaGDC_Rene-Bridging-Header.h */,
+				0F2E4A8825451B66007E11A3 /* vcDetalleUser.m */,
+			);
+			path = "Detalle User";
+			sourceTree = "<group>";
+		};
+		0F2E4A8D25451D56007E11A3 /* singleton */ = {
+			isa = PBXGroup;
+			children = (
+				0F2E4A8E25451D93007E11A3 /* SharedManager.h */,
+				0F2E4A8F25451D93007E11A3 /* SharedManager.m */,
+			);
+			path = singleton;
+			sourceTree = "<group>";
+		};
+		0F2E4AAA25452273007E11A3 /* Action */ = {
+			isa = PBXGroup;
+			children = (
+				0F2E4AAB254522CD007E11A3 /* Action.h */,
+				0F2E4AAC254522CD007E11A3 /* Action.m */,
+			);
+			path = Action;
+			sourceTree = "<group>";
+		};
+		0F2E4AB1254528B8007E11A3 /* cell */ = {
+			isa = PBXGroup;
+			children = (
+				0F2E4AB2254528DF007E11A3 /* cell.h */,
+				0F2E4AB3254528DF007E11A3 /* cell.m */,
+			);
+			path = cell;
+			sourceTree = "<group>";
+		};
+		392F441DB578E47E88F5892E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CCF6BEEA88D641AC77677848 /* Pods-PrubaGDC_Rene.debug.xcconfig */,
+				78C2E5BABFCE81884FE9710A /* Pods-PrubaGDC_Rene.release.xcconfig */,
+				2736BB1833A313013FDF1373 /* Pods-PrubaGDC_Rene-PrubaGDC_ReneUITests.debug.xcconfig */,
+				9A6219BCF833754ACDE1CD95 /* Pods-PrubaGDC_Rene-PrubaGDC_ReneUITests.release.xcconfig */,
+				D6C2CD570B37890C03B138E3 /* Pods-PrubaGDC_ReneTests.debug.xcconfig */,
+				EB3D5E3F072EACD82FD57E86 /* Pods-PrubaGDC_ReneTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		5A3A27F100073E0D2358E637 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B78D069D69578A8B2835EBCC /* Pods_PrubaGDC_Rene.framework */,
+				051E018FF5BC286974805B67 /* Pods_PrubaGDC_Rene_PrubaGDC_ReneUITests.framework */,
+				3C4933F3C5F3003EBDDCBD49 /* Pods_PrubaGDC_ReneTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0F2E4A1D2544CB2B007E11A3 /* PrubaGDC_Rene */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0F2E4A482544CB2F007E11A3 /* Build configuration list for PBXNativeTarget "PrubaGDC_Rene" */;
+			buildPhases = (
+				C4F23B8C2937DDC9B89C629D /* [CP] Check Pods Manifest.lock */,
+				0F2E4A1A2544CB2B007E11A3 /* Sources */,
+				0F2E4A1B2544CB2B007E11A3 /* Frameworks */,
+				0F2E4A1C2544CB2B007E11A3 /* Resources */,
+				72C749145FE35EFF7BAF0569 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PrubaGDC_Rene;
+			productName = PrubaGDC_Rene;
+			productReference = 0F2E4A1E2544CB2B007E11A3 /* PrubaGDC_Rene.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0F2E4A332544CB2F007E11A3 /* PrubaGDC_ReneTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0F2E4A4B2544CB2F007E11A3 /* Build configuration list for PBXNativeTarget "PrubaGDC_ReneTests" */;
+			buildPhases = (
+				691A39CC89ACD6FB80B8DAE7 /* [CP] Check Pods Manifest.lock */,
+				0F2E4A302544CB2F007E11A3 /* Sources */,
+				0F2E4A312544CB2F007E11A3 /* Frameworks */,
+				0F2E4A322544CB2F007E11A3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0F2E4A362544CB2F007E11A3 /* PBXTargetDependency */,
+			);
+			name = PrubaGDC_ReneTests;
+			productName = PrubaGDC_ReneTests;
+			productReference = 0F2E4A342544CB2F007E11A3 /* PrubaGDC_ReneTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		0F2E4A3E2544CB2F007E11A3 /* PrubaGDC_ReneUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0F2E4A4E2544CB2F007E11A3 /* Build configuration list for PBXNativeTarget "PrubaGDC_ReneUITests" */;
+			buildPhases = (
+				3B3CE79BCBE22E420D0F614D /* [CP] Check Pods Manifest.lock */,
+				0F2E4A3B2544CB2F007E11A3 /* Sources */,
+				0F2E4A3C2544CB2F007E11A3 /* Frameworks */,
+				0F2E4A3D2544CB2F007E11A3 /* Resources */,
+				D01F3466D711701E4F32B88F /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0F2E4A412544CB2F007E11A3 /* PBXTargetDependency */,
+			);
+			name = PrubaGDC_ReneUITests;
+			productName = PrubaGDC_ReneUITests;
+			productReference = 0F2E4A3F2544CB2F007E11A3 /* PrubaGDC_ReneUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0F2E4A162544CB2B007E11A3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1200;
+				LastUpgradeCheck = 1200;
+				TargetAttributes = {
+					0F2E4A1D2544CB2B007E11A3 = {
+						CreatedOnToolsVersion = 12.0;
+						LastSwiftMigration = 1200;
+					};
+					0F2E4A332544CB2F007E11A3 = {
+						CreatedOnToolsVersion = 12.0;
+						TestTargetID = 0F2E4A1D2544CB2B007E11A3;
+					};
+					0F2E4A3E2544CB2F007E11A3 = {
+						CreatedOnToolsVersion = 12.0;
+						TestTargetID = 0F2E4A1D2544CB2B007E11A3;
+					};
+				};
+			};
+			buildConfigurationList = 0F2E4A192544CB2B007E11A3 /* Build configuration list for PBXProject "PrubaGDC_Rene" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0F2E4A152544CB2B007E11A3;
+			productRefGroup = 0F2E4A1F2544CB2B007E11A3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0F2E4A1D2544CB2B007E11A3 /* PrubaGDC_Rene */,
+				0F2E4A332544CB2F007E11A3 /* PrubaGDC_ReneTests */,
+				0F2E4A3E2544CB2F007E11A3 /* PrubaGDC_ReneUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0F2E4A1C2544CB2B007E11A3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0F2E4A2E2544CB2F007E11A3 /* LaunchScreen.storyboard in Resources */,
+				0F2E4A2B2544CB2F007E11A3 /* Assets.xcassets in Resources */,
+				0F2E4A292544CB2B007E11A3 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0F2E4A322544CB2F007E11A3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0F2E4A3D2544CB2F007E11A3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3B3CE79BCBE22E420D0F614D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PrubaGDC_Rene-PrubaGDC_ReneUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		691A39CC89ACD6FB80B8DAE7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PrubaGDC_ReneTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		72C749145FE35EFF7BAF0569 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PrubaGDC_Rene/Pods-PrubaGDC_Rene-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PrubaGDC_Rene/Pods-PrubaGDC_Rene-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PrubaGDC_Rene/Pods-PrubaGDC_Rene-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C4F23B8C2937DDC9B89C629D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PrubaGDC_Rene-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D01F3466D711701E4F32B88F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PrubaGDC_Rene-PrubaGDC_ReneUITests/Pods-PrubaGDC_Rene-PrubaGDC_ReneUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PrubaGDC_Rene-PrubaGDC_ReneUITests/Pods-PrubaGDC_Rene-PrubaGDC_ReneUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PrubaGDC_Rene-PrubaGDC_ReneUITests/Pods-PrubaGDC_Rene-PrubaGDC_ReneUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0F2E4A1A2544CB2B007E11A3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0F2E4A262544CB2B007E11A3 /* ViewController.swift in Sources */,
+				0F2E4AB4254528DF007E11A3 /* cell.m in Sources */,
+				0F2E4A222544CB2B007E11A3 /* AppDelegate.swift in Sources */,
+				0F2E4AAD254522CD007E11A3 /* Action.m in Sources */,
+				0F2E4A9025451D93007E11A3 /* SharedManager.m in Sources */,
+				0F2E4A752544DAF6007E11A3 /* vcGituHubUser.swift in Sources */,
+				0F2E4A8925451B66007E11A3 /* vcDetalleUser.m in Sources */,
+				0F2E4A242544CB2B007E11A3 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0F2E4A302544CB2F007E11A3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0F2E4A392544CB2F007E11A3 /* PrubaGDC_ReneTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0F2E4A3B2544CB2F007E11A3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0F2E4A442544CB2F007E11A3 /* PrubaGDC_ReneUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0F2E4A362544CB2F007E11A3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0F2E4A1D2544CB2B007E11A3 /* PrubaGDC_Rene */;
+			targetProxy = 0F2E4A352544CB2F007E11A3 /* PBXContainerItemProxy */;
+		};
+		0F2E4A412544CB2F007E11A3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0F2E4A1D2544CB2B007E11A3 /* PrubaGDC_Rene */;
+			targetProxy = 0F2E4A402544CB2F007E11A3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		0F2E4A272544CB2B007E11A3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0F2E4A282544CB2B007E11A3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		0F2E4A2C2544CB2F007E11A3 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0F2E4A2D2544CB2F007E11A3 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0F2E4A462544CB2F007E11A3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		0F2E4A472544CB2F007E11A3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0F2E4A492544CB2F007E11A3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CCF6BEEA88D641AC77677848 /* Pods-PrubaGDC_Rene.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PrubaGDC_Rene/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.gdc.PrubaGDC-Rene";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "PrubaGDC_Rene/Controller/Detalle User/PrubaGDC_Rene-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0F2E4A4A2544CB2F007E11A3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 78C2E5BABFCE81884FE9710A /* Pods-PrubaGDC_Rene.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PrubaGDC_Rene/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.gdc.PrubaGDC-Rene";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "PrubaGDC_Rene/Controller/Detalle User/PrubaGDC_Rene-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		0F2E4A4C2544CB2F007E11A3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D6C2CD570B37890C03B138E3 /* Pods-PrubaGDC_ReneTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PrubaGDC_ReneTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.gdc.PrubaGDC-ReneTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PrubaGDC_Rene.app/PrubaGDC_Rene";
+			};
+			name = Debug;
+		};
+		0F2E4A4D2544CB2F007E11A3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EB3D5E3F072EACD82FD57E86 /* Pods-PrubaGDC_ReneTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PrubaGDC_ReneTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.gdc.PrubaGDC-ReneTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PrubaGDC_Rene.app/PrubaGDC_Rene";
+			};
+			name = Release;
+		};
+		0F2E4A4F2544CB2F007E11A3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2736BB1833A313013FDF1373 /* Pods-PrubaGDC_Rene-PrubaGDC_ReneUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PrubaGDC_ReneUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.gdc.PrubaGDC-ReneUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PrubaGDC_Rene;
+			};
+			name = Debug;
+		};
+		0F2E4A502544CB2F007E11A3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9A6219BCF833754ACDE1CD95 /* Pods-PrubaGDC_Rene-PrubaGDC_ReneUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PrubaGDC_ReneUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.gdc.PrubaGDC-ReneUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PrubaGDC_Rene;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0F2E4A192544CB2B007E11A3 /* Build configuration list for PBXProject "PrubaGDC_Rene" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0F2E4A462544CB2F007E11A3 /* Debug */,
+				0F2E4A472544CB2F007E11A3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0F2E4A482544CB2F007E11A3 /* Build configuration list for PBXNativeTarget "PrubaGDC_Rene" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0F2E4A492544CB2F007E11A3 /* Debug */,
+				0F2E4A4A2544CB2F007E11A3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0F2E4A4B2544CB2F007E11A3 /* Build configuration list for PBXNativeTarget "PrubaGDC_ReneTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0F2E4A4C2544CB2F007E11A3 /* Debug */,
+				0F2E4A4D2544CB2F007E11A3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0F2E4A4E2544CB2F007E11A3 /* Build configuration list for PBXNativeTarget "PrubaGDC_ReneUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0F2E4A4F2544CB2F007E11A3 /* Debug */,
+				0F2E4A502544CB2F007E11A3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0F2E4A162544CB2B007E11A3 /* Project object */;
+}
