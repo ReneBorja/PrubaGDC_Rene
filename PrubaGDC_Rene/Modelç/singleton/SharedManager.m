@@ -9,7 +9,7 @@
 
 @implementation MyManager
 
-@synthesize someProperty;
+@synthesize urlRepos;
 
 #pragma mark Singleton Methods
 
@@ -23,8 +23,9 @@
 }
 
 - (id)init {
-  if (self = [super init]) {
-  }
+//  if (self = [super init]) {
+//      
+//  }
   return self;
 }
 

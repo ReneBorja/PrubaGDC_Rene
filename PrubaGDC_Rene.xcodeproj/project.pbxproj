@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -237,7 +237,6 @@
 				D6C2CD570B37890C03B138E3 /* Pods-PrubaGDC_ReneTests.debug.xcconfig */,
 				EB3D5E3F072EACD82FD57E86 /* Pods-PrubaGDC_ReneTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};

@@ -23,26 +23,18 @@
     [super viewDidLoad];
     [self initConfig];
     [self configUI];
-    [self getRequest];
+  //  [self getRequest];
 //  NSMutableArray *Data =  [act getRequest];
 //    NSLog(@"DATA IN T VIEW %@",Data);
     // Do any additional setup after loading the view.
 }
 -(void)viewWillAppear:(BOOL)animated{
-    
+   
 }
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     
 }
-/*
-#pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 -(void)initConfig{
     sharedManager = [MyManager sharedManager];
     act =[Action new];
@@ -83,10 +75,11 @@
         return cell;
     }
 #pragma mark - WebService
--(void)getRequest{
+-(void)getRequest:(NSString*)url{
    // NSMutableArray *arrayData =[NSMutableArray new];
     NSMutableURLRequest *request = [[NSMutableURLRequest alloc] init];
-    [request setURL:[NSURL URLWithString:@"https://api.github.com/users/nandofer1/repos"]];
+    [request setURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@",url]]];
+    
     [request setHTTPMethod:@"GET"];
 
     NSURLSession *session = [NSURLSession sessionWithConfiguration:[NSURLSessionConfiguration defaultSessionConfiguration]];

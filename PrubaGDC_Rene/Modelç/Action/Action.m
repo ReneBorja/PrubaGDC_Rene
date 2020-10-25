@@ -6,9 +6,10 @@
 //
 
 #import "Action.h"
-#import <Alamofire/Alamofire-Swift.h>
 @implementation Action{
     int sesion;
+    __block NSMutableArray *arrayData;
+
 }
 
 
@@ -19,9 +20,8 @@
 
 //PARA CONEXIONES GET
 -(NSMutableArray*)getRequest{
-   // NSMutableArray *arrayData =[NSMutableArray new];
+  arrayData =[NSMutableArray new];
     NSMutableURLRequest *request = [[NSMutableURLRequest alloc] init];
-    __block NSMutableArray *arrayData = nil;
     [request setURL:[NSURL URLWithString:@"https://api.github.com/users"]];
     [request setHTTPMethod:@"GET"];
 
@@ -31,17 +31,30 @@
         NSError *err = nil;
 
         NSMutableArray *array = [NSJSONSerialization JSONObjectWithData:[requestReply dataUsingEncoding:NSUTF8StringEncoding] options:NSJSONReadingMutableContainers error:&err];
-        arrayData = array;
-      
+        if ([array count] !=0) {
+            self->arrayData = array;
+            [[NSNotificationCenter defaultCenter] postNotificationName:@"ReloadTV" object:nil userInfo:nil];
+
+        }
+            
+           
+
+//            dispatch_async(dispatch_get_main_queue(),^{
+//                
+//            });
+        
 
         
        // NSMutableDictionary*dataResponse = [array objectAtIndex:0];
-        //NSLog(@"Request reply: %@", array);
+        NSLog(@"Request reply: %@", array);
     }] resume];
     
     return arrayData;
 
     
+}
+-(NSMutableArray*)getUsers{
+    return arrayData;
 }
 //PARA CONEXIONES POST
 

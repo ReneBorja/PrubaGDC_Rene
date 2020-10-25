@@ -1,2 +1,2 @@
 ${PODS_ROOT}/Target Support Files/Pods-PrubaGDC_Rene/Pods-PrubaGDC_Rene-frameworks.sh
-${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework
+${BUILT_PRODUCTS_DIR}/SwiftHTTP/SwiftHTTP.framework

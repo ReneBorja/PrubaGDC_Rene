@@ -8,10 +8,10 @@
 #import <Foundation/Foundation.h>
 
 @interface MyManager : NSObject {
-    NSString *someProperty;
+    NSString *urlRepos;
 }
 
-@property (nonatomic, retain) NSString *someProperty;
+@property (nonatomic, retain) NSString *urlRepos;
 
 + (id)sharedManager;
 
