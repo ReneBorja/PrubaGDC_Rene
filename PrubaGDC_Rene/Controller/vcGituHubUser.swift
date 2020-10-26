@@ -6,21 +6,17 @@
 //
 
 import UIKit
+import SDWebImage
 
-class vcGituHubUser: UIViewController, UISearchResultsUpdating {
+
+@objc class vcGituHubUser: UIViewController, UISearchResultsUpdating {
     
 
 
     @IBOutlet weak var tvUsers: UITableView!
     
-    let tableData = ["One","e","Three","Twenty-One"]
-    var Login  = [String]()
-    var Id  = [Int]()
-    var Avatar  = [String]()
-    var type  = [String]()
-    var Site_Admin  = [String]()
-    var repos_url  = [String]()
     var userArray :NSArray = []
+    var urlRepo = [String]()
     var filteredTableData = [String]()
     var resultSearchController = UISearchController()
     
@@ -28,8 +24,6 @@ class vcGituHubUser: UIViewController, UISearchResultsUpdating {
         super.viewDidLoad()
        
 
-       
-        
 
     configUI()
     resultSearchController = ({
@@ -46,32 +40,13 @@ class vcGituHubUser: UIViewController, UISearchResultsUpdating {
     tvUsers.reloadData()
    getUser()
 
-        struct User {
-            var avatar_url: String
-            var events_url: String
-            var followers_url: String
-            var following_url: String
-            var gists_url: String
-            var gravatar_id: String
-            var html_url: String
-            var id: Int
-            var login: String
-            var node_id: String
-            var organizations_url: String
-            var received_events_url: String
-            var repos_url: String
-            var site_admin: String
-            var starred_url: String
-            var subscriptions_url: String
-            var type: String
-            var url: String
-
-        }
+       
     }
     func configUI(){
         self.navigationController?.navigationBar.prefersLargeTitles = true
     }
     func getUser(){
+        
         let url = URL(string: "https://api.github.com/users")
         guard let requestUrl = url else { fatalError() }
         var request = URLRequest(url: requestUrl)
@@ -88,21 +63,14 @@ class vcGituHubUser: UIViewController, UISearchResultsUpdating {
             }
             
            if let data = data, let dataString = String(data: data, encoding: .utf8) {
-             //   let object = try! JSONSerialization.jsonObject(with: data, options: [])
                 do {
                     self.userArray = try JSONSerialization.jsonObject(with: data , options: JSONSerialization.ReadingOptions.mutableContainers) as! NSArray
-
                     print("Parse success")
                 } catch {
                     print("Parse error")
                     print("Error: \(error)")
                 }
-                print("Response data string:\n \(self.userArray)")
-//                if let array = object as? [[String: Any]] {
-//                    //If you want array of task id you can try like
-//                    let taskArray = array.flatMap { $0[] as? String }
-//                    print(taskArray)
-//                }
+            print("Response data string:\n \(self.userArray.object(at: 0))")
             DispatchQueue.main.async {
                 self.tvUsers.reloadData()
                        }
@@ -110,6 +78,11 @@ class vcGituHubUser: UIViewController, UISearchResultsUpdating {
           
         }
         task.resume()
+        
+        
+
+             
+        
     }
     
    
@@ -118,16 +91,16 @@ class vcGituHubUser: UIViewController, UISearchResultsUpdating {
 
         let searchPredicate = NSPredicate(format: "SELF CONTAINS[c] %@", searchController.searchBar.text!)
         let array = (userArray as NSArray).filtered(using: searchPredicate)
-        filteredTableData = array as! [String]
+      //  filteredTableData = array as! [String]
 
         self.tvUsers.reloadData()
     }
   
     //--------------------------------------------------------------
     
-      }
+      
 
-// TABLEVIEW DELEGATES METODS
+}// TABLEVIEW DELEGATES METODS
 class cellCustom: UITableViewCell {
     
     @IBOutlet weak var imgUser: UIImageView!
@@ -138,10 +111,16 @@ class cellCustom: UITableViewCell {
 extension vcGituHubUser: UITableViewDataSource,UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         print("CLICK")
-        
-        print("You selected cell #\(indexPath.row)!")
-        performSegue(withIdentifier: "detailSegue", sender: nil)
-       
+        let sharedManager = MyManager()
+        let dicUser: NSMutableDictionary = userArray[indexPath.row] as! NSMutableDictionary
+        let repoUrl = dicUser["repos_url"] as? String
+        sharedManager.urlRepos = repoUrl!
+        print(repoUrl!)
+        let vcDetalle = vcDetalleUser.init()
+        vcDetalle.viewDidLoad()
+        vcDetalle.urlRepos = repoUrl as NSString?
+        vcDetalle.getRequest(repoUrl!)
+        performSegue(withIdentifier: "detailSegue", sender: self)
       }
     
     func tableView(_ tableView: UITableView,
@@ -150,7 +129,7 @@ extension vcGituHubUser: UITableViewDataSource,UITableViewDelegate {
     if  (resultSearchController.isActive) {
     return filteredTableData.count
     } else {
-    return userArray.count
+        return self.userArray.count
     }
 
     }
@@ -158,18 +137,20 @@ extension vcGituHubUser: UITableViewDataSource,UITableViewDelegate {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
     let cell = tableView.dequeueReusableCell(withIdentifier: "cellCustom", for: indexPath) as! cellCustom
         print("COUMNT:.... \(self.userArray.count)")
-
     cell.imgUser.layer.cornerRadius  = cell.imgUser.frame.size.width * 0.50
     if (resultSearchController.isActive) {
-  //  cell.lblName?.text = filteredTableData[indexPath.row]
+      cell.lblName?.text = filteredTableData[indexPath.row]
 
     return cell
     }
     else {
-    cell.lblName?.text = "HOLA"
-   print(userArray[indexPath.row])
-        cell.lblName?.text = userArray[indexPath.row] as? String
-    return cell
+        let dicUser: NSMutableDictionary = userArray[indexPath.row] as! NSMutableDictionary
+        cell.lblName?.text = dicUser["login"] as? String
+        cell.lblLogin?.text = dicUser["login"] as? String
+        cell.lblType?.text = dicUser["type"] as? String
+        cell.imgUser.sd_setImage(with: URL(string:dicUser["avatar_url"] as! String), placeholderImage: UIImage(named: ""))
+        print(userArray[indexPath.row])
+        return cell
     }
    }
 

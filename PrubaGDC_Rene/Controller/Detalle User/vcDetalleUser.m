@@ -18,21 +18,19 @@
 @end
 
 @implementation vcDetalleUser
-
+@synthesize urlRepos;
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self initConfig];
     [self configUI];
-  //  [self getRequest];
-//  NSMutableArray *Data =  [act getRequest];
-//    NSLog(@"DATA IN T VIEW %@",Data);
-    // Do any additional setup after loading the view.
+    
+ 
 }
 -(void)viewWillAppear:(BOOL)animated{
-   
 }
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    
+-(void)viewDidAppear:(BOOL)animated{
+   // [self getRequest:@"https://api.github.com/users/pjhyett/repos"];
+    [self getRequest:sharedManager.urlRepos];
 }
 
 -(void)initConfig{
@@ -41,7 +39,6 @@
     reposArray = [NSMutableArray new];
 }
 -(void)configUI{
-    
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
@@ -51,7 +48,6 @@
 
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-
     return [reposArray count];    //count number of row from counting array hear cataGorry is An Array
 }
 
@@ -76,6 +72,7 @@
     }
 #pragma mark - WebService
 -(void)getRequest:(NSString*)url{
+    sharedManager.urlRepos = url;
    // NSMutableArray *arrayData =[NSMutableArray new];
     NSMutableURLRequest *request = [[NSMutableURLRequest alloc] init];
     [request setURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@",url]]];
@@ -88,18 +85,20 @@
         NSError *err = nil;
 
         NSMutableArray *array = [NSJSONSerialization JSONObjectWithData:[requestReply dataUsingEncoding:NSUTF8StringEncoding] options:NSJSONReadingMutableContainers error:&err];
-        self->reposArray = array;
-        NSLog(@"REPOS::: %@",self->reposArray);
-        
-
-        dispatch_queue_t queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
-        dispatch_async(queue, ^{
-            //do your work in the background here
+        if ([array count] !=0) {
+            self->reposArray = array;
             dispatch_async(dispatch_get_main_queue(), ^{
-                //tell the main UI thread here
                 [self->_tvRepositorios reloadData];
+            });              dispatch_queue_t queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
+            dispatch_async(queue, ^{
+                //do your work in the background here
+                dispatch_async(dispatch_get_main_queue(), ^{
+                    //tell the main UI thread here
+                    [self reloadTable];
+                });
             });
-        });
+        }
+       
        // NSMutableDictionary*dataResponse = [array objectAtIndex:0];
         //NSLog(@"Request reply: %@", array);
     }] resume];
@@ -107,4 +106,13 @@
 
     
 }
+-(void)reloadTable{
+    dispatch_queue_t queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
+    dispatch_async(queue, ^{
+        //do your work in the background here
+        dispatch_async(dispatch_get_main_queue(), ^{
+            //tell the main UI thread here
+            [self->_tvRepositorios reloadData];
+        });
+    });}
 @end

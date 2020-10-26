@@ -6,9 +6,10 @@ target 'PrubaGDC_Rene' do
   use_frameworks!
 
   # Pods for PrubaGDC_Rene
-pod 'SwiftHTTP'
+pod 'SDWebImage'
   target 'PrubaGDC_ReneTests' do
     inherit! :search_paths
+
     # Pods for testing
   end
 

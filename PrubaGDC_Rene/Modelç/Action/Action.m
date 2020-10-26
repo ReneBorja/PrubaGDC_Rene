@@ -46,7 +46,6 @@
 
         
        // NSMutableDictionary*dataResponse = [array objectAtIndex:0];
-        NSLog(@"Request reply: %@", array);
     }] resume];
     
     return arrayData;
