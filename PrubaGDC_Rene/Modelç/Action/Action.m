@@ -6,6 +6,7 @@
 //
 
 #import "Action.h"
+
 @implementation Action{
     int sesion;
     __block NSMutableArray *arrayData;

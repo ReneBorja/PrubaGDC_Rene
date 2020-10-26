@@ -20,6 +20,7 @@
 		0F2E4A9025451D93007E11A3 /* SharedManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F2E4A8F25451D93007E11A3 /* SharedManager.m */; };
 		0F2E4AAD254522CD007E11A3 /* Action.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F2E4AAC254522CD007E11A3 /* Action.m */; };
 		0F2E4AB4254528DF007E11A3 /* cell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F2E4AB3254528DF007E11A3 /* cell.m */; };
+		0F4AD68425468C9C00048582 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F4AD68325468C9C00048582 /* SystemConfiguration.framework */; };
 		1CF01914E9FAE2C8CC6CBEE3 /* Pods_PrubaGDC_Rene_PrubaGDC_ReneUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 051E018FF5BC286974805B67 /* Pods_PrubaGDC_Rene_PrubaGDC_ReneUITests.framework */; };
 		43424DB909A47872B7A2A2CD /* Pods_PrubaGDC_ReneTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C4933F3C5F3003EBDDCBD49 /* Pods_PrubaGDC_ReneTests.framework */; };
 		E90A3CF2112B22C0FD89B9D4 /* Pods_PrubaGDC_Rene.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B78D069D69578A8B2835EBCC /* Pods_PrubaGDC_Rene.framework */; };
@@ -68,6 +69,7 @@
 		0F2E4AAC254522CD007E11A3 /* Action.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Action.m; sourceTree = "<group>"; };
 		0F2E4AB2254528DF007E11A3 /* cell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = cell.h; sourceTree = "<group>"; };
 		0F2E4AB3254528DF007E11A3 /* cell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = cell.m; sourceTree = "<group>"; };
+		0F4AD68325468C9C00048582 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		2736BB1833A313013FDF1373 /* Pods-PrubaGDC_Rene-PrubaGDC_ReneUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PrubaGDC_Rene-PrubaGDC_ReneUITests.debug.xcconfig"; path = "Target Support Files/Pods-PrubaGDC_Rene-PrubaGDC_ReneUITests/Pods-PrubaGDC_Rene-PrubaGDC_ReneUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		3C4933F3C5F3003EBDDCBD49 /* Pods_PrubaGDC_ReneTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PrubaGDC_ReneTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		78C2E5BABFCE81884FE9710A /* Pods-PrubaGDC_Rene.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PrubaGDC_Rene.release.xcconfig"; path = "Target Support Files/Pods-PrubaGDC_Rene/Pods-PrubaGDC_Rene.release.xcconfig"; sourceTree = "<group>"; };
@@ -83,6 +85,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0F4AD68425468C9C00048582 /* SystemConfiguration.framework in Frameworks */,
 				E90A3CF2112B22C0FD89B9D4 /* Pods_PrubaGDC_Rene.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -243,6 +246,7 @@
 		5A3A27F100073E0D2358E637 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0F4AD68325468C9C00048582 /* SystemConfiguration.framework */,
 				B78D069D69578A8B2835EBCC /* Pods_PrubaGDC_Rene.framework */,
 				051E018FF5BC286974805B67 /* Pods_PrubaGDC_Rene_PrubaGDC_ReneUITests.framework */,
 				3C4933F3C5F3003EBDDCBD49 /* Pods_PrubaGDC_ReneTests.framework */,
