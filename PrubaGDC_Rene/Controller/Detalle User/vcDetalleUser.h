@@ -14,6 +14,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, weak) NSString *urlRepos;
 -(void)getRequest:(NSString*)url;
+-(void)getUrl:(NSString*)url;
 @end
 
 NS_ASSUME_NONNULL_END

@@ -62,7 +62,9 @@
         NSMutableDictionary *data = [reposArray objectAtIndex:indexPath.row];
         NSMutableDictionary *owner = data[@"owner"];
         cell.lblName.text =[NSString stringWithFormat:@"[%@]",data[@"name"]];
+        cell.lblDescripcion.adjustsFontSizeToFitWidth = true;
         cell.lblDescripcion.text = [NSString stringWithFormat:@"[%@]",data[@"description"]];;
+        cell.lblUrl.adjustsFontSizeToFitWidth = true;
         cell.lblUrl.text = owner[@"html_url"];
 
        
@@ -72,7 +74,6 @@
     }
 #pragma mark - WebService
 -(void)getRequest:(NSString*)url{
-    sharedManager.urlRepos = url;
    // NSMutableArray *arrayData =[NSMutableArray new];
     NSMutableURLRequest *request = [[NSMutableURLRequest alloc] init];
     [request setURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@",url]]];
@@ -105,6 +106,9 @@
     
 
     
+}
+-(void)getUrl:(NSString*)url{
+    sharedManager.urlRepos = url;
 }
 -(void)reloadTable{
     dispatch_queue_t queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);

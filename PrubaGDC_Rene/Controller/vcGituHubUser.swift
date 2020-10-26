@@ -9,7 +9,7 @@ import UIKit
 import SDWebImage
 
 
-@objc class vcGituHubUser: UIViewController, UISearchResultsUpdating {
+@objc class vcGituHubUser: UIViewController, UISearchResultsUpdating,UIGestureRecognizerDelegate {
     
 
 
@@ -41,6 +41,13 @@ import SDWebImage
    getUser()
 
        
+    }
+    @objc func perfilUser(){
+
+        performSegue(withIdentifier: "perfilSegue", sender: self)
+    }
+    func gestureRecognizer(_ gestureRecognizer: UIGestureRecognizer, shouldRecognizeSimultaneouslyWith otherGestureRecognizer: UIGestureRecognizer) -> Bool{
+        return true
     }
     func configUI(){
         self.navigationController?.navigationBar.prefersLargeTitles = true
@@ -101,15 +108,22 @@ import SDWebImage
       
 
 }// TABLEVIEW DELEGATES METODS
+
 class cellCustom: UITableViewCell {
     
     @IBOutlet weak var imgUser: UIImageView!
     @IBOutlet weak var lblName: UILabel!
     @IBOutlet weak var lblLogin: UILabel!
     @IBOutlet weak var lblType: UILabel!
+    @IBOutlet var viewContent: UIView!
 }
-extension vcGituHubUser: UITableViewDataSource,UITableViewDelegate {
+extension vcGituHubUser:
+    UITableViewDataSource,UITableViewDelegate {
+    
+    
+    
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+       
         print("CLICK")
         let sharedManager = MyManager()
         let dicUser: NSMutableDictionary = userArray[indexPath.row] as! NSMutableDictionary
@@ -118,8 +132,8 @@ extension vcGituHubUser: UITableViewDataSource,UITableViewDelegate {
         print(repoUrl!)
         let vcDetalle = vcDetalleUser.init()
         vcDetalle.viewDidLoad()
-        vcDetalle.urlRepos = repoUrl as NSString?
-        vcDetalle.getRequest(repoUrl!)
+       // vcDetalle.urlRepos = repoUrl as NSString?
+        vcDetalle.getUrl(repoUrl!)
         performSegue(withIdentifier: "detailSegue", sender: self)
       }
     
@@ -137,14 +151,21 @@ extension vcGituHubUser: UITableViewDataSource,UITableViewDelegate {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
     let cell = tableView.dequeueReusableCell(withIdentifier: "cellCustom", for: indexPath) as! cellCustom
         print("COUMNT:.... \(self.userArray.count)")
+        let dicUser: NSMutableDictionary = userArray[indexPath.row] as! NSMutableDictionary
+        let touchGesture = UILongPressGestureRecognizer(target: self, action: #selector(perfilUser))
+        
+        touchGesture.minimumPressDuration = 0.5
+        touchGesture.delegate = self;
+        cell.viewContent.addGestureRecognizer(touchGesture)
     cell.imgUser.layer.cornerRadius  = cell.imgUser.frame.size.width * 0.50
+        
     if (resultSearchController.isActive) {
       cell.lblName?.text = filteredTableData[indexPath.row]
 
     return cell
     }
     else {
-        let dicUser: NSMutableDictionary = userArray[indexPath.row] as! NSMutableDictionary
+        
         cell.lblName?.text = dicUser["login"] as? String
         cell.lblLogin?.text = dicUser["login"] as? String
         cell.lblType?.text = dicUser["type"] as? String
@@ -153,6 +174,6 @@ extension vcGituHubUser: UITableViewDataSource,UITableViewDelegate {
         return cell
     }
    }
+   
 
 }
-

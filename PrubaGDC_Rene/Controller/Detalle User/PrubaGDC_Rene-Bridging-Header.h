@@ -6,3 +6,4 @@
 #import "SharedManager.h"
 #import "Action.h"
 #import "Cell.h"
+#import "vcPerfilUser.h"
